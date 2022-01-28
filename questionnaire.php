@@ -31,7 +31,7 @@ include('config/configuration.php');
         <tbody>
           <tr>
             <td>Humain</td>
-            <td><input type="radio" name="QP1" value="-3"/></td>
+            <td><input type="radio" name="QP1" value="-3" checked/></td>
             <td><input type="radio" name="QP1" value="-2"/></td>
             <td><input type="radio" name="QP1" value="-1"/></td>
             <td><input type="radio" name="QP1" value="0"/></td>
@@ -44,7 +44,7 @@ include('config/configuration.php');
             <td>M'isole</td>
             <td><input type="radio" name="QHI1" value="-3"/></td>
             <td><input type="radio" name="QHI1" value="-2"/></td>
-            <td><input type="radio" name="QHI1" value="-1"/></td>
+            <td><input type="radio" name="QHI1" value="-1" checked/></td>
             <td><input type="radio" name="QHI1" value="0"/></td>
             <td><input type="radio" name="QHI1" value="1"/></td>
             <td><input type="radio" name="QHI1" value="2"/></td>
@@ -54,7 +54,7 @@ include('config/configuration.php');
           <tr>
             <td>Plaisant</td>
             <td><input type="radio" name="ATT1" value="-3"/></td>
-            <td><input type="radio" name="ATT1" value="-2"/></td>
+            <td><input type="radio" name="ATT1" value="-2" checked/></td>
             <td><input type="radio" name="ATT1" value="-1"/></td>
             <td><input type="radio" name="ATT1" value="0"/></td>
             <td><input type="radio" name="ATT1" value="1"/></td>
@@ -68,7 +68,7 @@ include('config/configuration.php');
             <td><input type="radio" name="QHS1" value="-2"/></td>
             <td><input type="radio" name="QHS1" value="-1"/></td>
             <td><input type="radio" name="QHS1" value="0"/></td>
-            <td><input type="radio" name="QHS1" value="1"/></td>
+            <td><input type="radio" name="QHS1" value="1" checked/></td>
             <td><input type="radio" name="QHS1" value="2"/></td>
             <td><input type="radio" name="QHS1" value="3"/></td>
             <td>Conventionnel</td>
@@ -78,7 +78,7 @@ include('config/configuration.php');
             <td><input type="radio" name="QP2" value="-3"/></td>
             <td><input type="radio" name="QP2" value="-2"/></td>
             <td><input type="radio" name="QP2" value="-1"/></td>
-            <td><input type="radio" name="QP2" value="0"/></td>
+            <td><input type="radio" name="QP2" value="0" checked/></td>
             <td><input type="radio" name="QP2" value="1"/></td>
             <td><input type="radio" name="QP2" value="2"/></td>
             <td><input type="radio" name="QP2" value="3"/></td>
@@ -90,7 +90,7 @@ include('config/configuration.php');
             <td><input type="radio" name="QHI2" value="-2"/></td>
             <td><input type="radio" name="QHI2" value="-1"/></td>
             <td><input type="radio" name="QHI2" value="0"/></td>
-            <td><input type="radio" name="QHI2" value="1"/></td>
+            <td><input type="radio" name="QHI2" value="1" checked/></td>
             <td><input type="radio" name="QHI2" value="2"/></td>
             <td><input type="radio" name="QHI2" value="3"/></td>
             <td>Amateur</td>
@@ -101,7 +101,7 @@ include('config/configuration.php');
             <td><input type="radio" name="ATT2" value="-2"/></td>
             <td><input type="radio" name="ATT2" value="-1"/></td>
             <td><input type="radio" name="ATT2" value="0"/></td>
-            <td><input type="radio" name="ATT2" value="1"/></td>
+            <td><input type="radio" name="ATT2" value="1" checked/></td>
             <td><input type="radio" name="ATT2" value="2"/></td>
             <td><input type="radio" name="ATT2" value="3"/></td>
             <td>Beau</td>
@@ -114,7 +114,7 @@ include('config/configuration.php');
             <td><input type="radio" name="QP3" value="0"/></td>
             <td><input type="radio" name="QP3" value="1"/></td>
             <td><input type="radio" name="QP3" value="2"/></td>
-            <td><input type="radio" name="QP3" value="3"/></td>
+            <td><input type="radio" name="QP3" value="3" checked/></td>
             <td>Pas pratique</td>
           </tr>
           <tr>
@@ -125,7 +125,7 @@ include('config/configuration.php');
             <td><input type="radio" name="ATT3" value="0"/></td>
             <td><input type="radio" name="ATT3" value="1"/></td>
             <td><input type="radio" name="ATT3" value="2"/></td>
-            <td><input type="radio" name="ATT3" value="3"/></td>
+            <td><input type="radio" name="ATT3" value="3" checked/></td>
             <td>Désagréable</td>
           </tr>
           <tr>
@@ -134,7 +134,7 @@ include('config/configuration.php');
             <td><input type="radio" name="QP4" value="-2"/></td>
             <td><input type="radio" name="QP4" value="-1"/></td>
             <td><input type="radio" name="QP4" value="0"/></td>
-            <td><input type="radio" name="QP4" value="1"/></td>
+            <td><input type="radio" name="QP4" value="1" checked/></td>
             <td><input type="radio" name="QP4" value="2"/></td>
             <td><input type="radio" name="QP4" value="3"/></td>
             <td>Efficace</td>
@@ -148,7 +148,7 @@ include('config/configuration.php');
         <tbody>
           <tr>
             <td>De bon goût</td>
-            <td><input type="radio" name="QHI3" value="-3"/></td>
+            <td><input type="radio" name="QHI3" value="-3" checked/></td>
             <td><input type="radio" name="QHI3" value="-2"/></td>
             <td><input type="radio" name="QHI3" value="-1"/></td>
             <td><input type="radio" name="QHI3" value="0"/></td>
@@ -164,7 +164,7 @@ include('config/configuration.php');
             <td><input type="radio" name="QP5" value="-1"/></td>
             <td><input type="radio" name="QP5" value="0"/></td>
             <td><input type="radio" name="QP5" value="1"/></td>
-            <td><input type="radio" name="QP5" value="2"/></td>
+            <td><input type="radio" name="QP5" value="2" checked/></td>
             <td><input type="radio" name="QP5" value="3"/></td>
             <td>Imprévisible</td>
           </tr>
@@ -173,7 +173,7 @@ include('config/configuration.php');
             <td><input type="radio" name="QHI4" value="-3"/></td>
             <td><input type="radio" name="QHI4" value="-2"/></td>
             <td><input type="radio" name="QHI4" value="-1"/></td>
-            <td><input type="radio" name="QHI4" value="0"/></td>
+            <td><input type="radio" name="QHI4" value="0" checked/></td>
             <td><input type="radio" name="QHI4" value="1"/></td>
             <td><input type="radio" name="QHI4" value="2"/></td>
             <td><input type="radio" name="QHI4" value="3"/></td>
@@ -184,7 +184,7 @@ include('config/configuration.php');
             <td><input type="radio" name="QHI5" value="-3"/></td>
             <td><input type="radio" name="QHI5" value="-2"/></td>
             <td><input type="radio" name="QHI5" value="-1"/></td>
-            <td><input type="radio" name="QHI5" value="0"/></td>
+            <td><input type="radio" name="QHI5" value="0" checked/></td>
             <td><input type="radio" name="QHI5" value="1"/></td>
             <td><input type="radio" name="QHI5" value="2"/></td>
             <td><input type="radio" name="QHI5" value="3"/></td>
@@ -197,7 +197,7 @@ include('config/configuration.php');
             <td><input type="radio" name="QHI6" value="-1"/></td>
             <td><input type="radio" name="QHI6" value="0"/></td>
             <td><input type="radio" name="QHI6" value="1"/></td>
-            <td><input type="radio" name="QHI6" value="2"/></td>
+            <td><input type="radio" name="QHI6" value="2" checked/></td>
             <td><input type="radio" name="QHI6" value="3"/></td>
             <td>Me sépare des autres</td>
           </tr>
@@ -206,7 +206,7 @@ include('config/configuration.php');
             <td><input type="radio" name="QHI7" value="-3"/></td>
             <td><input type="radio" name="QHI7" value="-2"/></td>
             <td><input type="radio" name="QHI7" value="-1"/></td>
-            <td><input type="radio" name="QHI7" value="0"/></td>
+            <td><input type="radio" name="QHI7" value="0" checked/></td>
             <td><input type="radio" name="QHI7" value="1"/></td>
             <td><input type="radio" name="QHI7" value="2"/></td>
             <td><input type="radio" name="QHI7" value="3"/></td>
@@ -216,7 +216,7 @@ include('config/configuration.php');
             <td>Rebutant</td>
             <td><input type="radio" name="ATT4" value="-3"/></td>
             <td><input type="radio" name="ATT4" value="-2"/></td>
-            <td><input type="radio" name="ATT4" value="-1"/></td>
+            <td><input type="radio" name="ATT4" value="-1" checked/></td>
             <td><input type="radio" name="ATT4" value="0"/></td>
             <td><input type="radio" name="ATT4" value="1"/></td>
             <td><input type="radio" name="ATT4" value="2"/></td>
@@ -227,7 +227,7 @@ include('config/configuration.php');
             <td>Sans imagination</td>
             <td><input type="radio" name="QHS2" value="-3"/></td>
             <td><input type="radio" name="QHS2" value="-2"/></td>
-            <td><input type="radio" name="QHS2" value="-1"/></td>
+            <td><input type="radio" name="QHS2" value="-1" checked/></td>
             <td><input type="radio" name="QHS2" value="0"/></td>
             <td><input type="radio" name="QHS2" value="1"/></td>
             <td><input type="radio" name="QHS2" value="2"/></td>
@@ -237,7 +237,7 @@ include('config/configuration.php');
           <tr>
             <td>Bon</td>
             <td><input type="radio" name="ATT5" value="-3"/></td>
-            <td><input type="radio" name="ATT5" value="-2"/></td>
+            <td><input type="radio" name="ATT5" value="-2" checked/></td>
             <td><input type="radio" name="ATT5" value="-1"/></td>
             <td><input type="radio" name="ATT5" value="0"/></td>
             <td><input type="radio" name="ATT5" value="1"/></td>
@@ -255,7 +255,7 @@ include('config/configuration.php');
           <tr>
             <td>Confus</td>
             <td><input type="radio" name="QP6" value="-3"/></td>
-            <td><input type="radio" name="QP6" value="-2"/></td>
+            <td><input type="radio" name="QP6" value="-2" checked/></td>
             <td><input type="radio" name="QP6" value="-1"/></td>
             <td><input type="radio" name="QP6" value="0"/></td>
             <td><input type="radio" name="QP6" value="1"/></td>
@@ -266,7 +266,7 @@ include('config/configuration.php');
           <tr>
             <td>Repoussant</td>
             <td><input type="radio" name="ATT6" value="-3"/></td>
-            <td><input type="radio" name="ATT6" value="-2"/></td>
+            <td><input type="radio" name="ATT6" value="-2" checked/></td>
             <td><input type="radio" name="ATT6" value="-1"/></td>
             <td><input type="radio" name="ATT6" value="0"/></td>
             <td><input type="radio" name="ATT6" value="1"/></td>
@@ -278,7 +278,7 @@ include('config/configuration.php');
             <td>Audacieux</td>
             <td><input type="radio" name="QHS3" value="-3"/></td>
             <td><input type="radio" name="QHS3" value="-2"/></td>
-            <td><input type="radio" name="QHS3" value="-1"/></td>
+            <td><input type="radio" name="QHS3" value="-1" checked/></td>
             <td><input type="radio" name="QHS3" value="0"/></td>
             <td><input type="radio" name="QHS3" value="1"/></td>
             <td><input type="radio" name="QHS3" value="2"/></td>
@@ -292,7 +292,7 @@ include('config/configuration.php');
             <td><input type="radio" name="QHS4" value="-1"/></td>
             <td><input type="radio" name="QHS4" value="0"/></td>
             <td><input type="radio" name="QHS4" value="1"/></td>
-            <td><input type="radio" name="QHS4" value="2"/></td>
+            <td><input type="radio" name="QHS4" value="2" checked/></td>
             <td><input type="radio" name="QHS4" value="3"/></td>
             <td>Conservateur</td>
           </tr>
@@ -301,7 +301,7 @@ include('config/configuration.php');
             <td><input type="radio" name="QHS5" value="-3"/></td>
             <td><input type="radio" name="QHS5" value="-2"/></td>
             <td><input type="radio" name="QHS5" value="-1"/></td>
-            <td><input type="radio" name="QHS5" value="0"/></td>
+            <td><input type="radio" name="QHS5" value="0" checked/></td>
             <td><input type="radio" name="QHS5" value="1"/></td>
             <td><input type="radio" name="QHS5" value="2"/></td>
             <td><input type="radio" name="QHS5" value="3"/></td>
@@ -310,7 +310,7 @@ include('config/configuration.php');
           <tr>
             <td>Peu exigeant</td>
             <td><input type="radio" name="QHS6" value="-3"/></td>
-            <td><input type="radio" name="QHS6" value="-2"/></td>
+            <td><input type="radio" name="QHS6" value="-2" checked/></td>
             <td><input type="radio" name="QHS6" value="-1"/></td>
             <td><input type="radio" name="QHS6" value="0"/></td>
             <td><input type="radio" name="QHS6" value="1"/></td>
@@ -322,7 +322,7 @@ include('config/configuration.php');
             <td>Motivant</td>
             <td><input type="radio" name="ATT7" value="-3"/></td>
             <td><input type="radio" name="ATT7" value="-2"/></td>
-            <td><input type="radio" name="ATT7" value="-1"/></td>
+            <td><input type="radio" name="ATT7" value="-1" checked/></td>
             <td><input type="radio" name="ATT7" value="0"/></td>
             <td><input type="radio" name="ATT7" value="1"/></td>
             <td><input type="radio" name="ATT7" value="2"/></td>
@@ -336,7 +336,7 @@ include('config/configuration.php');
             <td><input type="radio" name="QHS7" value="-1"/></td>
             <td><input type="radio" name="QHS7" value="0"/></td>
             <td><input type="radio" name="QHS7" value="1"/></td>
-            <td><input type="radio" name="QHS7" value="2"/></td>
+            <td><input type="radio" name="QHS7" value="2" checked/></td>
             <td><input type="radio" name="QHS7" value="3"/></td>
             <td>Commun</td>
           </tr>
@@ -346,7 +346,7 @@ include('config/configuration.php');
             <td><input type="radio" name="QP7" value="-2"/></td>
             <td><input type="radio" name="QP7" value="-1"/></td>
             <td><input type="radio" name="QP7" value="0"/></td>
-            <td><input type="radio" name="QP7" value="1"/></td>
+            <td><input type="radio" name="QP7" value="1" checked/></td>
             <td><input type="radio" name="QP7" value="2"/></td>
             <td><input type="radio" name="QP7" value="3"/></td>
             <td>Maîtrisable</td>
