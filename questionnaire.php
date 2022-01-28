@@ -24,7 +24,7 @@ include('config/configuration.php');
 </head>
 <body>
   
-  <form id="regForm" action="traiterFormulaire.php" method="GET">
+  <form id="regForm" action="traiterFormulaire.php" method="POST">
     <div class="tab">
       <h2>Items 1/3</h2>
       <table>
@@ -54,12 +54,12 @@ include('config/configuration.php');
           <tr>
             <td>Plaisant</td>
             <td><input type="radio" name="ATT1" value="-3"/></td>
-            <td><input type="radio" name="ATT1" value="-2" checked/></td>
+            <td><input type="radio" name="ATT1" value="-2"/></td>
             <td><input type="radio" name="ATT1" value="-1"/></td>
             <td><input type="radio" name="ATT1" value="0"/></td>
             <td><input type="radio" name="ATT1" value="1"/></td>
             <td><input type="radio" name="ATT1" value="2"/></td>
-            <td><input type="radio" name="ATT1" value="3"/></td>
+            <td><input type="radio" name="ATT1" value="3" checked/></td>
             <td>Déplaisant</td>
           </tr>
           <tr>
