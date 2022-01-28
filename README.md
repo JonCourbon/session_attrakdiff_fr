@@ -1,5 +1,7 @@
 # session_attrakdiff_fr
-Outil permettant de réaliser un questionnaire standardisé "AttrakDiff" d'évaluation de l'expérience utilisateur (UX), version française, et de l'exploiter
+Outil permettant de réaliser une session de test avec le questionnaire standardisé "AttrakDiff" d'évaluation de l'expérience utilisateur (UX), version française, puis de l'exploiter
+
+## Installation
 
 
 ## Ressources
