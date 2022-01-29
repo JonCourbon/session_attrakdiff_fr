@@ -47,10 +47,17 @@ $moyennes=calculerScoresMoyens($scores);
 </head>
 <body>
   
-  <div class="chart-container" style="position: relative; height:40vh; width:80vw">
+  <div class="chart-container" style="position: relative; height:40vh; width:40vw">
     <canvas id="diagvalmoyennes"></canvas>
+  </div>
+  <div class="chart-container" style="position: relative; height:100vh; width:40vw">
     <canvas id="diagpairesdemots"></canvas>
   </div>
+  
+  <div class="chart-container" style="position: relative; height:40vh; width:40vw">
+    <canvas id="diagportfolio"></canvas>
+  </div>
+  
   
   
   <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
@@ -59,7 +66,11 @@ $moyennes=calculerScoresMoyens($scores);
   <?php
   tracerDiagValMoyennes($moyennes,"diagvalmoyennes");
   tracerDiagPairesDeMots($scores,"diagpairesdemots");
+  tracerDiagPortfolioResultats($moyennes,"diagportfolio");
   ?>
+  
+
+  
 
   </script>
 </body>
