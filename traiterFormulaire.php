@@ -1,40 +1,28 @@
 <?php 
+$path = getcwd();
+
+$numdata=0;
+$nomfichier=$path.'/data/data'.$numdata.'.txt';
+
+while(file_exists($nomfichier)){
+  $numdata++;
+  $nomfichier=$path.'/data/data'.$numdata.'.txt';
+}
+file_put_contents($nomfichier, json_encode($_POST));
+$data = json_decode(file_get_contents($nomfichier),TRUE);
+
 
 
 include("script/fonctions.php");
-// Questions pragmatiques
-$scoresQP=array();
-$somme=0;
-for($i=1;$i<=7;$i++){
-  $item='QP'.$i;
-  $scoresQP[$item]=score($item,$_POST[$item]);
-  $somme+=$scoresQP[$item];
-}
-$scoreQPmoy=$somme/7.;
-$somme=0;
-$scoresQHS=array();
-for($i=1;$i<=7;$i++){
-  $item='QHS'.$i;
-  $scoresQHS[$item]=score($item,$_POST[$item]);
-  $somme+=$scoresQHS[$item];
-}
-$scoreQHSmoy=$somme/7.;
-$somme=0;
-$scoresQHI=array();
-for($i=1;$i<=7;$i++){
-  $item='QHI'.$i;
-  $scoresQHI[$item]=score($item,$_POST[$item]);
-  $somme+=$scoresQHI[$item];
-}
-$scoreQHImoy=$somme/7.;
-$somme=0;
-$scoresATT=array();
-for($i=1;$i<=7;$i++){
-  $item='ATT'.$i;
-  $scoresATT[$item]=score($item,$_POST[$item]);
-  $somme+=$scoresATT[$item];
-}
-$scoresATTmoy=$somme/7.;
+include("script/fonctions_diagrammes.php");
+
+$scoresParticipant1=calculerScores($data);
+$tabScores[0]=$scoresParticipant1;
+$scores=calculerMoyennesScores($tabScores);
+
+
+$moyennes=calculerScoresMoyens($scores);
+
 ?>
 
 <!DOCTYPE html>
@@ -59,26 +47,20 @@ $scoresATTmoy=$somme/7.;
 </head>
 <body>
   
-  <canvas id="myChart" width="400" height="400"></canvas>
+  <div class="chart-container" style="position: relative; height:40vh; width:80vw">
+    <canvas id="diagvalmoyennes"></canvas>
+    <canvas id="diagpairesdemots"></canvas>
+  </div>
   
   
   <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
   <script>
-  const data = {
-    labels: ['QP','QHS','QHI','ATT'],
-    datasets: [{
-      data: [<?php echo $scoreQPmoy;?>,<?php echo $scoreQHSmoy;?>,<?php echo $scoreQHImoy;?>,<?php echo $scoresATTmoy;?>],
-      fill: false,
-      borderColor: 'rgb(75, 192, 192)',
-      tension: 0.1
-    }]
-  };
-  const config = {
-    type: 'line',
-    data: data,
-  };
-  const ctx = document.getElementById('myChart');
-  const myChart = new Chart(ctx,config);
+  
+  <?php
+  tracerDiagValMoyennes($moyennes,"diagvalmoyennes");
+  tracerDiagPairesDeMots($scores,"diagpairesdemots");
+  ?>
+
   </script>
 </body>
 </html>
