@@ -148,7 +148,7 @@ include('config/configuration.php');
         <tbody>
           <tr>
             <td>De bon goût</td>
-            <td><input type="radio" name="QHI3" value="-3" checked/></td>
+            <td><input type="radio" name="QHI3" value="-3"/></td>
             <td><input type="radio" name="QHI3" value="-2"/></td>
             <td><input type="radio" name="QHI3" value="-1"/></td>
             <td><input type="radio" name="QHI3" value="0"/></td>

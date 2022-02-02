@@ -23,12 +23,12 @@ function nextPrev(n) {
   let valid=true;
   for(k=0;k<items.length;k++){
     var objets=document.forms['questionnaire'].elements[items[k]];
-    if(getCheckedValue(objets)==false){
+    if(isCheckedValue(objets)==false){
       valid=false;
     }
   }
   if(!valid){
-    alert("Veuillez remplir tous les champs s'ils vous plaît !");
+    alert("Veuillez remplir tous les champs s'il vous plaît !");
   }
   else {
     // Exit the function if any field in the current tab is invalid:
@@ -100,22 +100,9 @@ function getItemNamesCurrentTab(){
 }
 
 function isCheckedValue(radioObj){
-  let res=getCheckedValue(radioObj);
-  if(res==""){
-    return false;
+  var radioLength = radioObj.length;
+  for(var i = 0; i < radioLength; i++) {
+    if(radioObj[i].checked) return true;
   }
-  else {
-    return true;
-  }
-}
-function getCheckedValue(radioObj) {
-    if(!radioObj) return "";
-    var radioLength = radioObj.length;
-    if(radioLength == undefined)
-        if(radioObj.checked) return radioObj.value;
-        else return "";
-    for(var i = 0; i < radioLength; i++) {
-        if(radioObj[i].checked) return radioObj[i].value;
-    }
-    return "";
+  return false;
 }
