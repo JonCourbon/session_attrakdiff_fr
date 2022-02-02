@@ -17,6 +17,11 @@ function tracerDiagValMoyennes($moyennes,$idcanvas){
     options: {
       responsive: true,
       maintainAspectRatio: false,
+      elements:{
+        point: {
+          radius:0
+        }
+      },
       plugins: {
         legend: {
           display: false,
@@ -103,6 +108,7 @@ function tracerDiagPortfolioResultats($moyennes,$idcanvas){
       }]
    },
    options: {
+     responsive: true,
       plugins: {
         legend: {
           display: false,
