@@ -24,14 +24,14 @@ include('config/configuration.php');
 </head>
 <body>
   
-  <form id="regForm" action="traiterFormulaire.php" method="POST">
+  <form id="regForm" action="traiterFormulaire.php" method="POST" name="questionnaire">
     <div class="tab">
       <h2>Items 1/3</h2>
-      <table>
+      <table id="items1">
         <tbody>
           <tr>
             <td>Humain</td>
-            <td><input type="radio" name="QP1" value="-3" checked/></td>
+            <td><input type="radio" name="QP1" value="-3"/></td>
             <td><input type="radio" name="QP1" value="-2"/></td>
             <td><input type="radio" name="QP1" value="-1"/></td>
             <td><input type="radio" name="QP1" value="0"/></td>
@@ -144,7 +144,7 @@ include('config/configuration.php');
     </div>
     <div class="tab">
       <h2>Items 2/3</h2>
-      <table>
+      <table id="items2">
         <tbody>
           <tr>
             <td>De bon goût</td>
@@ -250,7 +250,7 @@ include('config/configuration.php');
     </div>
     <div class="tab">
       <h2>Items 3/3</h2>
-      <table>
+      <table id="items3">
         <tbody>
           <tr>
             <td>Confus</td>

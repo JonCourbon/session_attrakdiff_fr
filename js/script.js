@@ -18,25 +18,43 @@ function showTab(n) {
 function nextPrev(n) {
   // This function will figure out which tab to display
   var x = document.getElementsByClassName("tab");
-  // Exit the function if any field in the current tab is invalid:
-  if (n == 1 && !validateForm()) return false;
-  // Hide the current tab:
-  x[currentTab].style.display = "none";
-  // Increase or decrease the current tab by 1:
-  currentTab = currentTab + n;
-  // if you have reached the end of the form...
-  if (currentTab >= x.length) {
-    // ... the form gets submitted:
-    document.getElementById("regForm").submit();
-    return false;
+  
+  let items=getItemNamesCurrentTab();
+  let valid=true;
+  for(k=0;k<items.length;k++){
+    var objets=document.forms['questionnaire'].elements[items[k]];
+    if(getCheckedValue(objets)==false){
+      valid=false;
+    }
   }
-  // Otherwise, display the correct tab:
-  showTab(currentTab);
+  if(!valid){
+    alert("Veuillez remplir tous les champs s'ils vous plaît !");
+  }
+  else {
+    // Exit the function if any field in the current tab is invalid:
+    if (n == 1 && !validateForm()) return false;
+    // Hide the current tab:
+    x[currentTab].style.display = "none";
+    // Increase or decrease the current tab by 1:
+    currentTab = currentTab + n;
+    // if you have reached the end of the form...
+    if (currentTab >= x.length) {
+      // ... the form gets submitted:
+      document.getElementById("regForm").submit();
+      return false;
+    }
+    // Otherwise, display the correct tab:
+    showTab(currentTab);
+  }
+  
+  
+
 }
 
 function validateForm() {
+
   // This function deals with validation of the form fields
-  var x, y, i, valid = true;
+  var x, y, i, valid=true;
   x = document.getElementsByClassName("tab");
   y = x[currentTab].getElementsByTagName("input");
   // A loop that checks every input field in the current tab:
@@ -67,13 +85,29 @@ function fixStepIndicator(n) {
 }
 
 
-<p><label for="number0"><input type="radio" value="0" name="number" id="number0"> Zero</label>
-&nbsp;<label for="number1"><input type="radio" value="1" name="number" id="number1"> One</label>
-&nbsp;<label for="number2"><input type="radio" value="2" name="number" id="number2"> Two</label>
-&nbsp;<label for="number3"><input type="radio" value="3" name="number" id="number3"> Three</label>
-&nbsp;<label for="number4"><input type="radio" value="4" name="number" id="number4"> Four</label>
-<p><input type="button" onclick="alert('Checked value is: '+getCheckedValue(document.forms['radioExampleForm'].elements['number']));" value="Show Checked Value">
+function getItemNamesCurrentTab(){
+  var items = document.getElementById("items"+(currentTab+1));
+  var arrInput=items.getElementsByTagName("input");
+  let nomsItem=[];
+  for (var i = 0; i < arrInput.length; i++) {
+    if (arrInput[i].type == "radio") {
+      if(nomsItem.includes(arrInput[i].name) == false){
+        nomsItem.push(arrInput[i].name);
+      }
+   }
+  }
+  return nomsItem;
+}
 
+function isCheckedValue(radioObj){
+  let res=getCheckedValue(radioObj);
+  if(res==""){
+    return false;
+  }
+  else {
+    return true;
+  }
+}
 function getCheckedValue(radioObj) {
     if(!radioObj) return "";
     var radioLength = radioObj.length;
