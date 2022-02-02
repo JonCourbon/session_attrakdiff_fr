@@ -65,3 +65,23 @@ function fixStepIndicator(n) {
   //... and adds the "active" class on the current step:
   x[n].className += " active";
 }
+
+
+<p><label for="number0"><input type="radio" value="0" name="number" id="number0"> Zero</label>
+&nbsp;<label for="number1"><input type="radio" value="1" name="number" id="number1"> One</label>
+&nbsp;<label for="number2"><input type="radio" value="2" name="number" id="number2"> Two</label>
+&nbsp;<label for="number3"><input type="radio" value="3" name="number" id="number3"> Three</label>
+&nbsp;<label for="number4"><input type="radio" value="4" name="number" id="number4"> Four</label>
+<p><input type="button" onclick="alert('Checked value is: '+getCheckedValue(document.forms['radioExampleForm'].elements['number']));" value="Show Checked Value">
+
+function getCheckedValue(radioObj) {
+    if(!radioObj) return "";
+    var radioLength = radioObj.length;
+    if(radioLength == undefined)
+        if(radioObj.checked) return radioObj.value;
+        else return "";
+    for(var i = 0; i < radioLength; i++) {
+        if(radioObj[i].checked) return radioObj[i].value;
+    }
+    return "";
+}

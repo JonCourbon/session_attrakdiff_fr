@@ -6,7 +6,7 @@ if(!isset($_POST["mottddeppass"]))
   }
   ?>
   <form method="POST">
-    <label for="mottddeppass"/>Mot de passe:<input type="text" name="mottddeppass"/>
+    <label for="mottddeppass"/>Mot de passe:<input type="password" name="mottddeppass"/>
     <input type="submit" value="S'authentifier"/>
   </form>
   <?php
