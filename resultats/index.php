@@ -59,7 +59,7 @@ $moyennes=calculerScoresMoyens($scores);
   <h2><?php echo count($tabScores);?> répondants</h2>
   
   <div class="chart-container" style="position: relative; height:40vh; width:40vw">
-    <canvas id="diagvalmoyennes"></canvas>
+    <canvas id="diagvalmoyennes" title="diagvalmoyennes"></canvas>
   </div>
   <div class="chart-container" style="position: relative; height:100vh; width:40vw">
     <canvas id="diagpairesdemots"></canvas>

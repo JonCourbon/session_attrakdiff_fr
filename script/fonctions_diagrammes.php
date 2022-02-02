@@ -59,6 +59,12 @@ function tracerDiagPairesDeMots($scores,$idcanvas){
       indexAxis: 'y',
       responsive: true,
       maintainAspectRatio: false,
+      elements:{
+        point: {
+          radius:5,
+          pointStyle:'rect'
+        }
+      },
       plugins: {
         legend: {
           display: false,
