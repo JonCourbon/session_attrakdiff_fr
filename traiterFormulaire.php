@@ -32,7 +32,11 @@ file_put_contents($nomfichier, json_encode($_POST));
   
 </head>
 <body>
-  <h1>DONNEES AJOUTEES</h1>
-  <h2>Nous vous remercions pour votre participation</h2>
+  <h1>Données ajoutées</h1>
+  <div class="centrer">
+      <p>Nous vous remercions pour votre participation à ce questionnaire.</p>
+  </div>
+  
+
 </body>
 </html>

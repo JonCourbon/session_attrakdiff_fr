@@ -6,6 +6,16 @@ body {
   background-color: #f1f1f1;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 1.2em;
+  }
+  p{
+    font-size: 0.8em;
+  }
+}
+
+
 #regForm {
   background-color: #ffffff;
   margin: 100px auto;
@@ -15,10 +25,26 @@ body {
   min-width: 300px;
 }
 
+@media only screen and (max-width: 600px) {
+  #regForm{
+    margin:0;
+    width:100%;
+    padding: 1.2rem 0.6rem;
+  }
+  td{
+    padding: 1.2rem 0.6rem;
+  }  
+}
+
 h1 {
   text-align: center;  
 }
 
+.centrer{
+  text-align:center;
+}
+
+/*
 input {
   padding: 10px;
   width: 100%;
@@ -26,6 +52,7 @@ input {
   font-family: Raleway;
   border: 1px solid #aaaaaa;
 }
+*/
 
 /* Mark input boxes that gets an error on validation: */
 input.invalid {
