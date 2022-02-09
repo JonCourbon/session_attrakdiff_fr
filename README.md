@@ -12,7 +12,7 @@ Les sous-échelles de l'AttrakDiff sont les suivantes :
 Il s'agit ici de la version traduite en français par C. Lallemand (Lallemand2015). Plus d'informations : [https://uxmind.eu/2014/06/23/attrakdiff-evaluation-quantitative-ux/](https://uxmind.eu/2014/06/23/attrakdiff-evaluation-quantitative-ux/).
 
 ## Outil
-![Introduction](doc/introduction.png "Page d'accueil")
+![Introduction](doc/Introduction.png "Page d'accueil")
 ![Questionnaire](doc/QuestionnairePartie1.png "Questionnaires, items 1/3")
 ![Résultats](doc/TraitementsAffichageResultats.png "Affichage des résultats pour l'administrateur")
 
