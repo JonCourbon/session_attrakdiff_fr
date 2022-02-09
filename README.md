@@ -20,9 +20,9 @@ Les sous-échelles de l'AttrakDiff sont les suivantes :
 2. Copiez-les sur votre serveur web Apache
 3. Modifiez les paramètres de configuration dans le fichier config/configuration.php
 
-    $typeelement='le site web'; // le site web / le produit / l'application
-    $nom='http://mmi-lepuy.fr'; // nom de ce que l'on veut évaluer
-    $motdepasse_admin='toto'; // mot de passe pour l'administrateur
+        $typeelement='le site web'; // le site web / le produit / l'application
+        $nom='http://mmi-lepuy.fr'; // nom de ce que l'on veut évaluer
+        $motdepasse_admin='toto'; // mot de passe pour l'administrateur
 
 Tout est prêt !
 
