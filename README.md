@@ -9,6 +9,8 @@ Les sous-échelles de l'AttrakDiff sont les suivantes :
 - Echelle de **qualité hédonique – identification** (QH-I) : indique dans quelle mesure le produit permet à l’utilisateur de s’identifier à lui
 - Echelle d’**attractivité globale** (ATT) : décrit la valeur globale du produit basée sur la perception des qualités pragmatiques et hédoniques
 
+Il s'agit ici de la version traduite en français par C. Lallemand (Lallemand2015). Plus d'informations : [https://uxmind.eu/2014/06/23/attrakdiff-evaluation-quantitative-ux/](https://uxmind.eu/2014/06/23/attrakdiff-evaluation-quantitative-ux/).
+
 ## Outil
 ![Introduction](doc/introduction.png "Page d'accueil")
 ![Questionnaire](doc/QuestionnairePartie1.png "Questionnaires, items 1/3")
@@ -33,4 +35,6 @@ Tout est prêt !
 ## Ressources
 Passation en ligne (pour les versions allemande et anglaise) sur le site [http://attrakdiff.de](http://attrakdiff.de)
 
-Lallemand, C., Koenig, V., Gronier, G.,  &  Martin,  R. (2015).  Création  et  validation d'une  version  française  du  questionnaire  AttrakDiﬀ  pour l’évaluation de  l’expérience  utilisateur  des  systèmes  interactifs,  Revue  Européenne  de  Psychologie  Appliquée.  [doi:10.1016/j.erap.2015.08.002](doi:10.1016/j.erap.2015.08.002)
+Hassenzahl, M. & Hofvenschiöld, E. (2003). *If it doesn't feel right, who cares if it works? oder Muss Software mehr als nur gebrauchstauglich sein?* In: M. Peissner & K. Röse (Eds.), Usability Professionals 2003, p. 135-138, Stuttgart: German Chapter der Usability Professionals' Association e.V. 
+
+Lallemand, C., Koenig, V., Gronier, G.,  &  Martin,  R. (2015).  *Création  et  validation d'une  version  française  du  questionnaire  AttrakDiﬀ  pour l’évaluation de  l’expérience  utilisateur  des  systèmes  interactifs*,  Revue  Européenne  de  Psychologie  Appliquée.  [doi:10.1016/j.erap.2015.08.002](doi:10.1016/j.erap.2015.08.002)

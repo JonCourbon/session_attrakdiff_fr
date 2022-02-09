@@ -126,6 +126,18 @@ button:hover {
   padding-left: 4px;
 }
 
+table tr:nth-child(odd) td:first-child, table tr:nth-child(odd) td:last-child {
+  background-color:#edeef2;
+}
+table tr td:first-child{
+  text-align: right;
+}
+
+
+td, th {
+  border-bottom: 0;
+}
+
 
 #myChart{
   width:400px;
