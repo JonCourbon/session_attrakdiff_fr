@@ -126,6 +126,9 @@ button:hover {
   padding-left: 4px;
 }
 
+fieldset, input, select, textarea{
+  margin-bottom:0;
+}
 table tr:nth-child(odd) td:first-child, table tr:nth-child(odd) td:last-child {
   background-color:#edeef2;
 }
