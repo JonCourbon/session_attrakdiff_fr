@@ -72,6 +72,7 @@ $moyennes=calculerScoresMoyens($scores);
   
   
   <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+  <script src='https://cdn.plot.ly/plotly-2.14.0.min.js'></script>
   <script>
   
   <?php

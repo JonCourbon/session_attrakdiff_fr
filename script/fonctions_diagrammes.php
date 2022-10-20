@@ -97,49 +97,82 @@ function tracerDiagPairesDeMots($scores,$idcanvas){
 
 function tracerDiagPortfolioResultats($moyennes,$idcanvas){
   echo ("
-  var x = new Chart(document.getElementById('".$idcanvas."'), {
-   type: 'scatter',
-   data: {
-      datasets: [{
-         data: [{
-            x: ".$moyennes['QP'].",
-            y: ".(($moyennes['QHS']+$moyennes['QHI'])/2.)."
-         }],
-      }]
-   },
-   options: {
-     responsive: true,
-      plugins: {
-        legend: {
-          display: false,
-        },
-        title: {
-          display: true,
-          text: 'Porfolio des résultats'
-        }
-      },
-      pointRadius: 10,
-      pointBackgroundColor: 'red',
-      scales : {
-        x : {
-          min: -3,
-          max: 3,
-          title:{
-            display: true,
-            text: 'qualité pragmatique'
-          }
-        },
-        y : {
-          min: -3,
-          max: 3,
-          title:{
-            display: true,
-            text: 'qualité hédonique'
-          }
-        }
+  	var trace = {
+  x: [".$moyennes['QP']."],
+  y: [".(($moyennes['QHS']+$moyennes['QHI'])/2.)."],
+  type: 'scatter',
+  mode: 'markers',
+  marker: { size: 20 }
+};
+var data = [trace];
+var layout = {
+  width: 500,
+  height: 500,
+  xaxis: {
+    autotick: false,
+    ticks: 'outside',
+    tick0: 0,
+    dtick: 1,
+    ticklen: 8,
+    tickcolor: '#000',
+    range: [-3,3 ],
+    title: {
+      text: 'Qualité pragmatique',
+      font: {
+        family: 'Courier New, monospace',
+        size: 18,
+        color: '#7f7f7f'
       }
-   }
-});
+    },
+  },
+  yaxis: {
+    autotick: false,
+    ticks: 'outside',
+    tick0: 0,
+    dtick: 1,
+    ticklen: 8,
+     range: [-3,3 ],
+    tickcolor: '#000',
+    title: {
+      text: 'Qualité hédonique',
+      font: {
+        family: 'Courier New, monospace',
+        size: 18,
+        color: '#7f7f7f'
+      }
+    },
+  },
+  title: {
+    text:'Portfolio des résultats',
+    font: {
+      family: 'Courier New, monospace',
+      size: 24
+    },
+    xref: 'paper',
+    x: 0.05,
+  },
+  shapes: [
+{
+      type: 'rect',
+      x0: 1,
+      y0: 1,
+      x1: 2,
+      y1: 3,
+      line: {
+        color: 'rgba(128, 0, 128, 1)'
+      }
+
+    },
+
+    ]
+};
+
+var config = {
+	responsive: true,
+	locale: 'fr'
+	}
+Plotly.newPlot('".$idcanvas."', data, layout,config);
+
   ");
 }
 
