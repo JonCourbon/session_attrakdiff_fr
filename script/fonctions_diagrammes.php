@@ -150,21 +150,7 @@ var layout = {
     },
     xref: 'paper',
     x: 0.05,
-  },
-  shapes: [
-{
-      type: 'rect',
-      x0: 1,
-      y0: 1,
-      x1: 2,
-      y1: 3,
-      line: {
-        color: 'rgba(128, 0, 128, 1)'
-      }
-
-    },
-
-    ]
+  }
 };
 
 var config = {
